@@ -315,7 +315,7 @@ export default {
        },
 
        selectionContainsContent: function () {
-           var sel = document.getSelection();
+           var sel = rangy.getSelection();
 
            // collapsed selection or selection withour range doesn't contain content
            if (!sel || sel.isCollapsed || !sel.rangeCount) {
